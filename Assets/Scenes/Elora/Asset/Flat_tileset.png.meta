@@ -1,0 +1,765 @@
+fileFormatVersion: 2
+guid: d4a55facf935a0c48a97052d7c6c434e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1048
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Flat_tileset_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 5730
+        width: 1024
+        height: 1032
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357e6b14605b0b14685489dad8562f4c
+      internalID: -880522318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_1
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 5730
+        width: 1027
+        height: 1032
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901ac30c0c6cbbf45ba20a1d0dc03e66
+      internalID: -1547240348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_2
+      rect:
+        serializedVersion: 2
+        x: 2309
+        y: 5730
+        width: 1031
+        height: 1028
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ed759250d4ed444b57cdec33b7f805
+      internalID: 78793795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_3
+      rect:
+        serializedVersion: 2
+        x: 3449
+        y: 5727
+        width: 1031
+        height: 1031
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75f6c05b675f9841bfe47eab9d229b8
+      internalID: -1266165799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_4
+      rect:
+        serializedVersion: 2
+        x: 4645
+        y: 5730
+        width: 1031
+        height: 1028
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74c5a186775e564395b806a25e7bbfc
+      internalID: 61622264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_5
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 4621
+        width: 1024
+        height: 1027
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf99b5f20192c9c42bad977ec322dee1
+      internalID: 1238344762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_6
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 4621
+        width: 1027
+        height: 1027
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd27351e8ac74a24eba4c2566bbdadbe
+      internalID: 2136062023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_7
+      rect:
+        serializedVersion: 2
+        x: 2309
+        y: 4621
+        width: 1031
+        height: 1027
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca855eafc6c11434fb3f26843d33ec1e
+      internalID: -751602640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_8
+      rect:
+        serializedVersion: 2
+        x: 3449
+        y: 4621
+        width: 1028
+        height: 1031
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9fc90cab91a41149ab2c9934cb5f930
+      internalID: 98509396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_9
+      rect:
+        serializedVersion: 2
+        x: 4641
+        y: 4621
+        width: 1031
+        height: 1027
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37be0ade26ad08841909d2f57230c090
+      internalID: 975537671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_10
+      rect:
+        serializedVersion: 2
+        x: 5777
+        y: 4617
+        width: 1032
+        height: 1028
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c1ea28bfc1ed049a9b1825033fd24d
+      internalID: 489004049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_11
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 3516
+        width: 1032
+        height: 1027
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449574483a5acd04cb2f8ba8f5d1515c
+      internalID: 1382186548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_12
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 3516
+        width: 1031
+        height: 1031
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b680d3158b6e0345b556c1c3df38b02
+      internalID: 1855063631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_13
+      rect:
+        serializedVersion: 2
+        x: 2309
+        y: 3516
+        width: 1031
+        height: 1027
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deae26b89de01824bbe4479401cdb225
+      internalID: 2081475135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_14
+      rect:
+        serializedVersion: 2
+        x: 3438
+        y: 3516
+        width: 1031
+        height: 1031
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cfb09c98344c6b45805f88a662ed069
+      internalID: 135618787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_15
+      rect:
+        serializedVersion: 2
+        x: 4637
+        y: 3512
+        width: 1035
+        height: 1031
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e440f836b2b9b804da59e5cd5f948184
+      internalID: 1467910897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_16
+      rect:
+        serializedVersion: 2
+        x: 5770
+        y: 3512
+        width: 1031
+        height: 1031
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff07cc8bf659277439a8fb204f7bacec
+      internalID: -373314169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_17
+      rect:
+        serializedVersion: 2
+        x: 6902
+        y: 3512
+        width: 1036
+        height: 1035
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b4b7674a0531c4194fb3b54bca5a93
+      internalID: 1135127583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_18
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 2391
+        width: 1035
+        height: 1031
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b525c87a448706d4688fc745c5380f18
+      internalID: -1684097511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_19
+      rect:
+        serializedVersion: 2
+        x: 2313
+        y: 2379
+        width: 1031
+        height: 1031
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4ed224389234743887a1948365bba8
+      internalID: 39049288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_20
+      rect:
+        serializedVersion: 2
+        x: 3441
+        y: 2379
+        width: 1028
+        height: 1031
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3ee76a02ed8e141942e423a4b48ce8
+      internalID: 1764947706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_21
+      rect:
+        serializedVersion: 2
+        x: 4645
+        y: 2375
+        width: 1027
+        height: 1031
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8281f3d6c88579e4d8f53ae8a7d23fe3
+      internalID: 1559829535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_22
+      rect:
+        serializedVersion: 2
+        x: 5773
+        y: 2375
+        width: 1028
+        height: 1027
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6dc7434e8500224aa19bb4121e65ca5
+      internalID: 1123771000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_23
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1266
+        width: 1031
+        height: 1031
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b705f6e44a6c1449523ec479dbee0c
+      internalID: 1442096722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_24
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 1258
+        width: 1031
+        height: 1031
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1505f01c0d1a5074dbb5bda8483b2479
+      internalID: -1540316352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_25
+      rect:
+        serializedVersion: 2
+        x: 2313
+        y: 1246
+        width: 1031
+        height: 1031
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626b6cb878c5abc4db294f882b250331
+      internalID: 1559259130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_26
+      rect:
+        serializedVersion: 2
+        x: 3441
+        y: 1246
+        width: 1032
+        height: 1031
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9ebfabaadf1614db97f523508ba83f
+      internalID: 694017822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_27
+      rect:
+        serializedVersion: 2
+        x: 4645
+        y: 1242
+        width: 1031
+        height: 1028
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55e84c797cbf314eb424796196f69bc
+      internalID: 1784245373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_tileset_28
+      rect:
+        serializedVersion: 2
+        x: 5773
+        y: 1242
+        width: 1028
+        height: 1028
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a337e43ef82084f995661f4772745d
+      internalID: -1568597073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Flat_tileset_0: -880522318
+      Flat_tileset_1: -1547240348
+      Flat_tileset_10: 489004049
+      Flat_tileset_11: 1382186548
+      Flat_tileset_12: 1855063631
+      Flat_tileset_13: 2081475135
+      Flat_tileset_14: 135618787
+      Flat_tileset_15: 1467910897
+      Flat_tileset_16: -373314169
+      Flat_tileset_17: 1135127583
+      Flat_tileset_18: -1684097511
+      Flat_tileset_19: 39049288
+      Flat_tileset_2: 78793795
+      Flat_tileset_20: 1764947706
+      Flat_tileset_21: 1559829535
+      Flat_tileset_22: 1123771000
+      Flat_tileset_23: 1442096722
+      Flat_tileset_24: -1540316352
+      Flat_tileset_25: 1559259130
+      Flat_tileset_26: 694017822
+      Flat_tileset_27: 1784245373
+      Flat_tileset_28: -1568597073
+      Flat_tileset_3: -1266165799
+      Flat_tileset_4: 61622264
+      Flat_tileset_5: 1238344762
+      Flat_tileset_6: 2136062023
+      Flat_tileset_7: -751602640
+      Flat_tileset_8: 98509396
+      Flat_tileset_9: 975537671
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
