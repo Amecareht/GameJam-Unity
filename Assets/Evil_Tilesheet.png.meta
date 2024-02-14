@@ -1,0 +1,853 @@
+fileFormatVersion: 2
+guid: 412878a3d3dd68d4e8012eb39d750add
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1024
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Evil_Tilesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4096
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839a31c1b321ba347b8770b98943e690
+      internalID: -842998424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 4096
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a6b760bbada0a429a5c0030d772e8b
+      internalID: 1149290184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_2
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 4096
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9417b65da46ac3f4bbb575cea0a66d8b
+      internalID: -195129182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_3
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 4096
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0814c58b5451334fa6baca37bc7ec38
+      internalID: 1434200536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_4
+      rect:
+        serializedVersion: 2
+        x: 4092
+        y: 4096
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849c0a618fd534e4ca559fa098cfb1ca
+      internalID: 1437924101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_5
+      rect:
+        serializedVersion: 2
+        x: 5115
+        y: 4096
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec10de2155571984d959631ab7cf73de
+      internalID: 80704617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_6
+      rect:
+        serializedVersion: 2
+        x: 6138
+        y: 4096
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5065540a98bd540ae35ccbdd287322
+      internalID: 374088799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79ddc242a6a8de54a898c968362d2211
+      internalID: -1087255432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_8
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 3072
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a171be403f2bc4cbf661ff6efb8659
+      internalID: -1278970919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_9
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 3072
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30d00fdb48e901458dbd8829919ac4f
+      internalID: 1065227397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_10
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 3072
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a25ea600a214b40af382f6bf1d120d
+      internalID: 1833528719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_11
+      rect:
+        serializedVersion: 2
+        x: 4092
+        y: 3072
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46c03a8443275d4ab211206742f337e
+      internalID: -1123974550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_12
+      rect:
+        serializedVersion: 2
+        x: 5115
+        y: 3072
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471dbc656383b1246b59b0e8752c6d6b
+      internalID: 1462444347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_13
+      rect:
+        serializedVersion: 2
+        x: 6138
+        y: 3072
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1de156c7ddac14c894310ea404874e
+      internalID: -2015872721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e22b4f2e3cfcf44bc4476cec4c5790
+      internalID: -556647621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 2048
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22218a030c4413449d5db7fc267e7d1
+      internalID: -1548383145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_16
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 2048
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df196e7916e60d40b2c055c2b560d55
+      internalID: 138748723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_17
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 2048
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57671bf1baa07344861818ea80e5a2c
+      internalID: -179651424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_18
+      rect:
+        serializedVersion: 2
+        x: 4092
+        y: 2048
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4abcacc493e3a2d4b8c7f891d4b3c36b
+      internalID: -1513443625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_19
+      rect:
+        serializedVersion: 2
+        x: 5115
+        y: 2048
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbd1a59449c5954e8359dee532a4ac2
+      internalID: 1268013733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_20
+      rect:
+        serializedVersion: 2
+        x: 6138
+        y: 2048
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96d17f2b22ff27418fb8c3d7844d5c4
+      internalID: 1861933094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7122d23aa7655134d9c7dad41f97b575
+      internalID: -731754383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_22
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1024
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1783e8594edbf7d40b04e48c227bb0d3
+      internalID: -2105943277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_23
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 1024
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de6a8521a037bb4d9dc66fc58e4493a
+      internalID: -785244535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_24
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 1024
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c334c5b11f9478b40af407a389ed64f2
+      internalID: -1684949315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_25
+      rect:
+        serializedVersion: 2
+        x: 4092
+        y: 1024
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcdf90815ea3cb846962721e6b8faf5b
+      internalID: -1481425006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_26
+      rect:
+        serializedVersion: 2
+        x: 5115
+        y: 1024
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e881b96528768c40921ee22ab8cfa22
+      internalID: 1136956893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_27
+      rect:
+        serializedVersion: 2
+        x: 6138
+        y: 1024
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ab1944b7eb5114a9639fe71042e27d
+      internalID: -1194512265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533b34352639204408ab8a34a698664a
+      internalID: 1467823137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_29
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 0
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b64c4e1f1842e64ab74aca6355c8a8c
+      internalID: 1808730233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_30
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 0
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1654b53153fac4cb6009ffc1ae108f
+      internalID: 1005678119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_31
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 0
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4634d8b6e42737408e03876ab842099
+      internalID: -2021572181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil_Tilesheet_32
+      rect:
+        serializedVersion: 2
+        x: 4092
+        y: 0
+        width: 1023.8571
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460d6b25d0082e24f9e4173d8e17993f
+      internalID: 948837242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Evil_Tilesheet_0: -842998424
+      Evil_Tilesheet_1: 1149290184
+      Evil_Tilesheet_10: 1833528719
+      Evil_Tilesheet_11: -1123974550
+      Evil_Tilesheet_12: 1462444347
+      Evil_Tilesheet_13: -2015872721
+      Evil_Tilesheet_14: -556647621
+      Evil_Tilesheet_15: -1548383145
+      Evil_Tilesheet_16: 138748723
+      Evil_Tilesheet_17: -179651424
+      Evil_Tilesheet_18: -1513443625
+      Evil_Tilesheet_19: 1268013733
+      Evil_Tilesheet_2: -195129182
+      Evil_Tilesheet_20: 1861933094
+      Evil_Tilesheet_21: -731754383
+      Evil_Tilesheet_22: -2105943277
+      Evil_Tilesheet_23: -785244535
+      Evil_Tilesheet_24: -1684949315
+      Evil_Tilesheet_25: -1481425006
+      Evil_Tilesheet_26: 1136956893
+      Evil_Tilesheet_27: -1194512265
+      Evil_Tilesheet_28: 1467823137
+      Evil_Tilesheet_29: 1808730233
+      Evil_Tilesheet_3: 1434200536
+      Evil_Tilesheet_30: 1005678119
+      Evil_Tilesheet_31: -2021572181
+      Evil_Tilesheet_32: 948837242
+      Evil_Tilesheet_4: 1437924101
+      Evil_Tilesheet_5: 80704617
+      Evil_Tilesheet_6: 374088799
+      Evil_Tilesheet_7: -1087255432
+      Evil_Tilesheet_8: -1278970919
+      Evil_Tilesheet_9: 1065227397
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
