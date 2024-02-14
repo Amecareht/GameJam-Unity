@@ -16,6 +16,11 @@ public class PlayerMove : MonoBehaviour
     public Vector2 rightOffset, leftOffset;
     public float collisionRadius = 0.25f;
     [SerializeField] private bool onWall;
+    [SerializeField] private bool RightWall,LeftWall;
+    [SerializeField] private int wallLeftOrRight;
+    private bool wallJumping;
+    
+    
 
     private Vector3 direction;
 
@@ -68,23 +73,36 @@ public class PlayerMove : MonoBehaviour
 
         onWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, groundLayer) ||
                  Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, groundLayer);
+        RightWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, groundLayer);
+        LeftWall = Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, groundLayer);
 
-        if (onWall && Input.GetKeyDown(KeyCode.Space))
+        if (RightWall) wallLeftOrRight = -1;
+        if (LeftWall) wallLeftOrRight = 1;
+
+        if (Input.GetKeyDown("space") && onWall && !isGrounded()) wallJumping = true;
+
+        if (wallJumping)
         {
-            rb.velocity = Vector2.Lerp(rb.velocity, (new Vector2(dir.x * speed,rb.velocity.y)),.5f * Time.deltaTime);
-            rb.velocity = Vector2.up * jumpPower;
-            rb.velocity += dir * jumpPower;
-
+            Invoke(nameof(JumpFalse),0.2f);
+            rb.velocity = new Vector2(speed * wallLeftOrRight, jumpPower);
         }
+        
+
 
 
 
 
     }
 
-    void Jump(Vector2 dir, bool onWall)
+    void JumpFalse()
     {
-        
+        wallJumping = false;
+    }
+
+    void Jump(Vector2 dir)
+    {
+        rb.velocity = new Vector2(rb.velocity.x, 0);
+        rb.velocity += dir * jumpPower;
     }
     void Move(Vector2 dir)
     {
