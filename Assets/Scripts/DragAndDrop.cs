@@ -10,12 +10,18 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     private RectTransform _rectTransform;
     private BoxCollider2D _collider2D;
     private float scrollInput;
+    
 
 
     private void Update()
     {
         float scrollInput = Input.GetAxis("Mouse ScrollWheel");
-        transform.Rotate(Vector3.up, scrollInput * 10 * Time.deltaTime);
+        if(!_collider2D.enabled) transform.Rotate(Vector3.forward, scrollInput * 10000 * Time.deltaTime);
+        
+        
+        
+        
+        
     }
 
     private void Awake()
@@ -26,8 +32,9 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        _rectTransform.anchoredPosition += eventData.delta;
+        _rectTransform.anchoredPosition += eventData.delta * Time.deltaTime;
         _collider2D.enabled = false;
+      
     }
     
 
@@ -45,7 +52,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
     public void OnDrag(PointerEventData eventData)
     {
-        _rectTransform.anchoredPosition += eventData.delta;
+        _rectTransform.anchoredPosition += eventData.delta * Time.deltaTime;
         Debug.Log("OnDrag");
     }
 
@@ -53,6 +60,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     {
         Debug.Log("onPointerUp");
         _collider2D.enabled = true;
+       
     }
     
 }

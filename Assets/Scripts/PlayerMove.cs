@@ -13,6 +13,9 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float baseSpeed;
     [SerializeField]private float sprint;
     private float raycastDistance = 4f;
+    public Vector2 rightOffset, leftOffset;
+    public float collisionRadius = 0.25f;
+    [SerializeField] private bool onWall;
 
     private Vector3 direction;
 
@@ -62,8 +65,19 @@ public class PlayerMove : MonoBehaviour
         {
             rb.velocity = Vector2.up * jumpPower;
         }
-       
-        
+
+        onWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, groundLayer) ||
+                 Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, groundLayer);
+
+        if (onWall && Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.velocity = Vector2.Lerp(rb.velocity, (new Vector2(dir.x * speed,rb.velocity.y)),.5f * Time.deltaTime);
+            rb.velocity = Vector2.up * jumpPower;
+            rb.velocity += dir * jumpPower;
+
+        }
+
+
 
 
     }
