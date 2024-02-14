@@ -82,6 +82,10 @@ public class PlayerMove : MonoBehaviour
 
     }
 
+    void Jump(Vector2 dir, bool onWall)
+    {
+        
+    }
     void Move(Vector2 dir)
     {
         rb.velocity = (new Vector2(dir.x * speed, rb.velocity.y));

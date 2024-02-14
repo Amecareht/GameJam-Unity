@@ -11,12 +11,10 @@ public class RotateRoom : MonoBehaviour
     // Start is called before the first frame update
 
     private void OnTriggerEnter2D(Collider2D other)
-    {
-       
-  
+    { 
         if (other.CompareTag("Player"))
         {
-            rotation -= 90f;
+            rotation = 90f;
             Room.transform.rotation = Quaternion.Euler(0,0,rotation);
         }
     }
