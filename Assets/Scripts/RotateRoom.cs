@@ -14,7 +14,7 @@ public class RotateRoom : MonoBehaviour
     { 
         if (other.CompareTag("Player"))
         {
-            rotation = 90f;
+            rotation += 90f;
             Room.transform.rotation = Quaternion.Euler(0,0,rotation);
         }
     }
