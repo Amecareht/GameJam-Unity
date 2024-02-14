@@ -10,13 +10,12 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     private RectTransform _rectTransform;
     private BoxCollider2D _collider2D;
     private float scrollInput;
-    private bool SelectedPiece;
 
 
     private void Update()
     {
         float scrollInput = Input.GetAxis("Mouse ScrollWheel");
-        if(SelectedPiece) transform.Rotate(Vector3.forward, scrollInput * 1000 * Time.deltaTime);
+        transform.Rotate(Vector3.up, scrollInput * 10 * Time.deltaTime);
     }
 
     private void Awake()

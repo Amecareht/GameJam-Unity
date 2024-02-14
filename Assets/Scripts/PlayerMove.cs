@@ -5,10 +5,14 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     [Header("PlayerMoves")] private float _inputValueX; // Horizontal input
+    private float _inputValueY; // Vertical input
 
     // Player movement speed
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
+    [SerializeField] private float baseSpeed;
+    [SerializeField]private float sprint;
+    private float raycastDistance = 4f;
 
     private Vector3 direction;
 
@@ -16,43 +20,65 @@ public class PlayerMove : MonoBehaviour
     private float _posX;
 
     private Rigidbody2D rb;
-  
+    [SerializeField] private bool IsSprinting;
+
+
+    public Transform GroundCheck;
+    public LayerMask groundLayer;
+    [SerializeField] private int MaxJumps;
+    [SerializeField] private int JumpLeft;
+    
+    
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
+        JumpLeft = MaxJumps;
+        sprint = speed * 1.4f;
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
         _inputValueX = Input.GetAxis("Horizontal");
-        if (_inputValueX != 0 || _inputValueX != 0)
-            Move(); // If moving, call the Move() function
-        else
+        _inputValueY =  Input.GetAxis("Vertical");
+
+        Vector2 dir = new Vector2(_inputValueX, _inputValueY);
+        Move(dir);
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            // If not moving, set direction to zero and update animator
-            direction = Vector3.zero;
+            IsSprinting = true;
         }
 
-
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+            IsSprinting = false;
         }
+
+        if (isGrounded() && Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.velocity = Vector2.up * jumpPower;
+        }
+       
+        
+
+
+    }
+
+    void Move(Vector2 dir)
+    {
+        rb.velocity = (new Vector2(dir.x * speed, rb.velocity.y));
+        speed = IsSprinting ? sprint : baseSpeed;
         
     }
 
-    void Move()
+    private bool isGrounded()
     {
-        // Get the current position of the player
-        var position = transform.position;
-        _posX = (position.x + (_inputValueX * Time.deltaTime * speed));
-        // Set the new direction vector
-        direction = new Vector2(_posX,transform.position.y);
-
-        // Move the player to the new position
-        transform.position = direction;
+      return  transform.Find("GroundCheck").GetComponent<GroundCheck>().isGrounded;
     }
+
+    
 }
