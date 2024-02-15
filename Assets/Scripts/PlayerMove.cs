@@ -14,10 +14,10 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float baseSpeed;
     [SerializeField]private float sprint;
     private float raycastDistance = 4f;
-    public Vector2 rightOffset, leftOffset;
+    public Vector2 rightOffset, leftOffset, topOffset;
     public float collisionRadius = 0.25f;
     [SerializeField] private bool onWall;
-    [SerializeField] private bool RightWall,LeftWall;
+    [SerializeField] private bool RightWall,LeftWall,TopWall;
     [SerializeField] private int wallLeftOrRight;
     private bool wallJumping;
     public float BumpPower;
@@ -78,6 +78,7 @@ public class PlayerMove : MonoBehaviour
                  Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, Glued);
         RightWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, Glued);
         LeftWall = Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, Glued);
+        TopWall = Physics2D.OverlapCircle((Vector2)transform.position + topOffset, collisionRadius, Glued);
         
 
         if (RightWall) wallLeftOrRight = -1;
@@ -94,6 +95,15 @@ public class PlayerMove : MonoBehaviour
         if (RightWall || LeftWall)
         {
             rb.velocity = new Vector2(rb.velocity.x, dir.y * speed);
+        }
+
+        if (TopWall)
+        {
+            rb.gravityScale = 0;
+        }
+        else
+        {
+            rb.gravityScale = 1;
         }
 
         if (isBumbed())
