@@ -86,6 +86,11 @@ public class PlayerMove : MonoBehaviour
             Invoke(nameof(JumpFalse),0.2f);
             rb.velocity = new Vector2(speed * wallLeftOrRight, jumpPower);
         }
+
+        if (RightWall || LeftWall)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, dir.y * speed);
+        }
         
 
 
@@ -115,6 +120,8 @@ public class PlayerMove : MonoBehaviour
     {
       return  transform.Find("GroundCheck").GetComponent<GroundCheck>().isGrounded;
     }
+
+    
 
     
 }
