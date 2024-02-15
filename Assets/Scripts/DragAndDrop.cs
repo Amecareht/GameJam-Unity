@@ -24,10 +24,6 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
            
         }
         
-        
-        
-        
-        
     }
 
     private void Awake()
@@ -40,7 +36,6 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-       
         _collider2D.enabled = false;
       
     }
