@@ -10,13 +10,19 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     private RectTransform _rectTransform;
     private BoxCollider2D _collider2D;
     private float scrollInput;
-    
+    [SerializeField] private Canvas canvas;
+    private CanvasGroup _canvasGroup;
 
 
     private void Update()
     {
         float scrollInput = Input.GetAxis("Mouse ScrollWheel");
         if(!_collider2D.enabled) transform.Rotate(Vector3.forward, scrollInput * 10000 * Time.deltaTime);
+        if (_rectTransform.localPosition.x < 150)
+        {
+            _rectTransform.localScale = new Vector3(1, 1, 1);
+           
+        }
         
         
         
@@ -28,11 +34,13 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     {
         _rectTransform = GetComponent<RectTransform>();
         _collider2D = GetComponent<BoxCollider2D>();
+        _canvasGroup = GetComponent<CanvasGroup>();
+
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        _rectTransform.anchoredPosition += eventData.delta * Time.deltaTime;
+       
         _collider2D.enabled = false;
       
     }
@@ -40,19 +48,22 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("onEndDrag");
+        _canvasGroup.alpha = 1f;
+        _canvasGroup.blocksRaycasts = true;
+       
     }
 
    
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("OnBeginDrag");
+        _canvasGroup.alpha = .6f;
+        _canvasGroup.blocksRaycasts = false;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        _rectTransform.anchoredPosition += eventData.delta * Time.deltaTime;
+        _rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
         Debug.Log("OnDrag");
     }
 
