@@ -216,6 +216,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6350994856423153582, guid: 4f219c56360b7034b9d24eb25a367fba, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 346228460}
     - target: {fileID: 8894835010842412744, guid: 4f219c56360b7034b9d24eb25a367fba, type: 3}
       propertyPath: m_Name
       value: BumperDeFouMalade
@@ -467,6 +471,11 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!223 &346228460 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 2316942924568703021, guid: d564434bab8daa0408047535dfea8b3e, type: 3}
+  m_PrefabInstance: {fileID: 658564957}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &346228461 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3348710131869343576, guid: d564434bab8daa0408047535dfea8b3e, type: 3}
@@ -760,7 +769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3348710131869343576, guid: d564434bab8daa0408047535dfea8b3e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1003.8013
+      value: 1413.146
       objectReference: {fileID: 0}
     - target: {fileID: 3348710131869343576, guid: d564434bab8daa0408047535dfea8b3e, type: 3}
       propertyPath: m_SizeDelta.y
@@ -796,7 +805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3348710131869343576, guid: d564434bab8daa0408047535dfea8b3e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5.7
+      value: 5.6
       objectReference: {fileID: 0}
     - target: {fileID: 3348710131869343576, guid: d564434bab8daa0408047535dfea8b3e, type: 3}
       propertyPath: m_AnchoredPosition.y

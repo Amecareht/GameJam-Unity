@@ -48,8 +48,6 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
        
     }
 
-   
-
     public void OnBeginDrag(PointerEventData eventData)
     {
         _canvasGroup.alpha = .6f;
@@ -58,7 +56,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
     public void OnDrag(PointerEventData eventData)
     {
-        _rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        _rectTransform.anchoredPosition += eventData.delta * 1.6f ;
         Debug.Log("OnDrag");
     }
 

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -134,7 +135,19 @@ public class PlayerMove : MonoBehaviour
         return transform.Find("GroundCheck").GetComponent<GroundCheck>().Bump;
     }
 
-    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Fan"))
+        {
+            rb.gravityScale = -1;
+        }
+    }
 
-    
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.CompareTag(("Fan")))
+        {
+            rb.gravityScale = 1;
+        }
+    }
 }
