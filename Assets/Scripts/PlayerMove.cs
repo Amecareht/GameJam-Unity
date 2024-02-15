@@ -19,6 +19,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private bool RightWall,LeftWall;
     [SerializeField] private int wallLeftOrRight;
     private bool wallJumping;
+    public float BumpPower;
     
     
 
@@ -32,6 +33,7 @@ public class PlayerMove : MonoBehaviour
 
 
     public Transform GroundCheck;
+    public LayerMask Glued;
     public LayerMask groundLayer;
     [SerializeField] private int MaxJumps;
     [SerializeField] private int JumpLeft;
@@ -71,10 +73,11 @@ public class PlayerMove : MonoBehaviour
             rb.velocity = Vector2.up * jumpPower;
         }
 
-        onWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, groundLayer) ||
-                 Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, groundLayer);
-        RightWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, groundLayer);
-        LeftWall = Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, groundLayer);
+        onWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, Glued) ||
+                 Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, Glued);
+        RightWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, Glued);
+        LeftWall = Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, Glued);
+        
 
         if (RightWall) wallLeftOrRight = -1;
         if (LeftWall) wallLeftOrRight = 1;
@@ -86,7 +89,17 @@ public class PlayerMove : MonoBehaviour
             Invoke(nameof(JumpFalse),0.2f);
             rb.velocity = new Vector2(speed * wallLeftOrRight, jumpPower);
         }
-        
+
+        if (RightWall || LeftWall)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, dir.y * speed);
+        }
+
+        if (isBumbed())
+        {
+            rb.velocity = Vector2.up * BumpPower;
+        }
+        Debug.Log(isBumbed());
 
 
 
@@ -115,6 +128,13 @@ public class PlayerMove : MonoBehaviour
     {
       return  transform.Find("GroundCheck").GetComponent<GroundCheck>().isGrounded;
     }
+
+    private bool isBumbed()
+    {
+        return transform.Find("GroundCheck").GetComponent<GroundCheck>().Bump;
+    }
+
+    
 
     
 }
