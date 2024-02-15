@@ -19,6 +19,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private bool RightWall,LeftWall;
     [SerializeField] private int wallLeftOrRight;
     private bool wallJumping;
+    public float BumpPower;
     
     
 
@@ -93,7 +94,12 @@ public class PlayerMove : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, dir.y * speed);
         }
-        
+
+        if (isBumbed())
+        {
+            rb.velocity = Vector2.up * BumpPower;
+        }
+        Debug.Log(isBumbed());
 
 
 
@@ -121,6 +127,11 @@ public class PlayerMove : MonoBehaviour
     private bool isGrounded()
     {
       return  transform.Find("GroundCheck").GetComponent<GroundCheck>().isGrounded;
+    }
+
+    private bool isBumbed()
+    {
+        return transform.Find("GroundCheck").GetComponent<GroundCheck>().Bump;
     }
 
     
