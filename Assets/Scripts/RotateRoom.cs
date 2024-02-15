@@ -6,16 +6,30 @@ using UnityEngine;
 public class RotateRoom : MonoBehaviour
 {
     public GameObject Room;
-    private float rotation = 0f;
-    
+    public float rotation;
+    private bool outside;
+
+    public void Start()
+    {
+        rotation = 270f;
+    }
+
     // Start is called before the first frame update
 
     private void OnTriggerEnter2D(Collider2D other)
-    { 
-        if (other.CompareTag("Player"))
+    {
+
+        outside = false;
+        if (other.CompareTag("Player") && !outside)
         {
+            outside = false;
             rotation += 90f;
             Room.transform.rotation = Quaternion.Euler(0,0,rotation);
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        outside = true;
     }
 }
