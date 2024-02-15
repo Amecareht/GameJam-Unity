@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 823601016358440984}
   - component: {fileID: 351333570027796847}
   - component: {fileID: 4908468791500638231}
-  - component: {fileID: 1232282627309393800}
   m_Layer: 3
   m_Name: Plateform
   m_TagString: Untagged
@@ -148,33 +147,6 @@ MonoBehaviour:
   startPoint: {fileID: 4208490741752928745}
   endPoint: {fileID: 6813265375775788428}
   speed: 1
---- !u!50 &1232282627309393800
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2079317079017826997}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!1 &4237526190204470304
 GameObject:
   m_ObjectHideFlags: 0

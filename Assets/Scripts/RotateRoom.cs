@@ -19,17 +19,14 @@ public class RotateRoom : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-        outside = false;
-        if (other.CompareTag("Player") && !outside)
+
+        if (other.CompareTag("Player"))
         {
             outside = false;
             rotation += 90f;
-            Room.transform.rotation = Quaternion.Euler(0,0,rotation);
+            Room.transform.rotation = Quaternion.Euler(0, 0, rotation);
         }
     }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        outside = true;
-    }
 }
+
+    
