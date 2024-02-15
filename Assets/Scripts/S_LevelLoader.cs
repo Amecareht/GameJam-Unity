@@ -6,11 +6,16 @@ using UnityEngine.SceneManagement;
 public class S_LevelLoader : MonoBehaviour
 {
     public string NextLevel;
+
+    public static Vector3 spawnPlayer;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Vérifiez si l'objet entrant est celui que vous souhaitez détecter (par exemple, un joueur)
         if (other.CompareTag("Player"))
         {
+            spawnPlayer = other.transform.position;
+
             LoadNextLevel();
         }
     }
@@ -28,4 +33,5 @@ public class S_LevelLoader : MonoBehaviour
             Debug.LogWarning("Le nom du niveau suivant n'est pas défini dans l'éditeur Unity !");
         }
     }
+    
 }
