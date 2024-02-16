@@ -26,6 +26,8 @@ public class PlayerMove : MonoBehaviour
     public bool onPlateform;
     private Vector2 relativeTransfom;
     public Rigidbody2D platformRb;
+    private Animator _animator;
+    private SpriteRenderer _spriteRenderer;
      
     
 
@@ -52,6 +54,8 @@ public class PlayerMove : MonoBehaviour
         JumpLeft = MaxJumps;
         sprint = speed * 1.4f;
         slideSpeed = 9f;
+        _animator = GetComponent<Animator>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
 
     }
 
@@ -62,7 +66,15 @@ public class PlayerMove : MonoBehaviour
         _inputValueY =  Input.GetAxis("Vertical");
 
         Vector2 dir = new Vector2(_inputValueX, _inputValueY);
-        Move(dir);
+      
+        if (_inputValueY != 0 || _inputValueX != 0)
+        {
+            Move(dir);
+        }
+        else
+        {
+            _animator.SetBool("IsWalking", false);
+        }
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
@@ -158,6 +170,15 @@ public class PlayerMove : MonoBehaviour
     {
         rb.velocity = (new Vector2(dir.x * speed, rb.velocity.y));
         speed = IsSprinting ? sprint : baseSpeed;
+        _animator.SetBool("IsWalking" ,true);
+        if (_inputValueX < 0)
+        {
+            _spriteRenderer.flipX = true;
+        }
+        else
+        {
+            _spriteRenderer.flipX = false;
+        }
         
     }
 
