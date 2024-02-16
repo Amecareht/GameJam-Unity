@@ -23,7 +23,10 @@ public class PlayerMove : MonoBehaviour
     public float BumpPower;
     public float slideSpeed;
     public bool isMoving;
-    
+    public bool onPlateform;
+    private Vector2 relativeTransfom;
+    public Rigidbody2D platformRb;
+     
     
 
     private Vector3 direction;
@@ -123,7 +126,15 @@ public class PlayerMove : MonoBehaviour
         {
             WallSlide();
         }
+        float targetSpeed = speed * relativeTransfom.x;
 
+        if (onPlateform)
+        {
+          
+            rb.velocity = new Vector2(dir.x * speed + platformRb.velocity.x , rb.velocity.y);
+            Debug.Log(targetSpeed);
+            
+        }
 
     }
 

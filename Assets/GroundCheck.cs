@@ -18,6 +18,7 @@ public class GroundCheck : MonoBehaviour
       {
          Bump = true;
       }
+      
    }
 
    private void OnTriggerExit2D(Collider2D other)
