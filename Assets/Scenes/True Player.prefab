@@ -52,6 +52,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: True Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8867333482195870438, guid: da8700b328cadaa4da5a4d67e11bcbd9, type: 3}
+      propertyPath: Glued.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 8867333482195870438, guid: da8700b328cadaa4da5a4d67e11bcbd9, type: 3}
+      propertyPath: collisionRadius
+      value: 0.45
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

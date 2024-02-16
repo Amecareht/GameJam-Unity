@@ -97,7 +97,7 @@ public class PlayerMove : MonoBehaviour
 
         onWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, Glued) ||
                  Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, Glued);
-        onWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, groundLayer) ||
+        Onwalls = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, groundLayer) ||
                  Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, groundLayer);
         RightWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, Glued);
         LeftWall = Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, Glued);
@@ -134,7 +134,7 @@ public class PlayerMove : MonoBehaviour
             rb.velocity = Vector2.up * BumpPower;
         }
         Debug.Log(isBumbed());
-        if ((onWall || Onwalls ) && !isGrounded())
+        if (( Onwalls ) && !isGrounded() && (!LeftWall || !RightWall))
         {
             WallSlide();
         }
