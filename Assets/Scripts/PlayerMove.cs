@@ -74,6 +74,10 @@ public class PlayerMove : MonoBehaviour
         if (isGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
             rb.velocity = Vector2.up * jumpPower;
+
+            if (rb.velocity.x != 0)
+
+                   isMoving = true;
         }
 
         onWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, Glued) ||
