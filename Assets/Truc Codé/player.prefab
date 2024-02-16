@@ -76,7 +76,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.73552704, y: 0.15804291}
+  m_Size: {x: 0.73552704, y: 3}
   m_EdgeRadius: 0
 --- !u!114 &2078214640907210708
 MonoBehaviour:
@@ -94,6 +94,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   isGrounded: 0
+  Bump: 0
 --- !u!1 &8196904684045683512
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,13 +273,19 @@ MonoBehaviour:
   sprint: 0
   rightOffset: {x: 0.3, y: 0}
   leftOffset: {x: -0.3, y: 0}
+  topOffset: {x: 0, y: 0}
   collisionRadius: 0.25
   onWall: 0
   RightWall: 0
   LeftWall: 0
+  TopWall: 0
   wallLeftOrRight: 0
+  BumpPower: 0
   IsSprinting: 0
   GroundCheck: {fileID: 629022594754924052}
+  Glued:
+    serializedVersion: 2
+    m_Bits: 0
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
