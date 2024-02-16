@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Julien/Lvl_2.unity
     guid: da3ed058f436f7f4caf2fcf1cf465781
+  - enabled: 1
+    path: Assets/Scenes/Julien/Lvl_3.unity
+    guid: 71552fdb1362d57479cb4aa94be00fe1
+  - enabled: 1
+    path: "Assets/Scenes/Lo\xEEc/Lvl_4.unity"
+    guid: d57319c51a762f7459c4fb7c2c634bd9
+  - enabled: 1
+    path: "Assets/Scenes/Lo\xEEc/Lvl_5.unity"
+    guid: 22befcff9beb3704a972f10731e68803
+  - enabled: 1
+    path: "Assets/Scenes/Lo\xEEc/Lvl_6.unity"
+    guid: a97219df1fdc08648a7b3f286f6456ca
   m_configObjects: {}
