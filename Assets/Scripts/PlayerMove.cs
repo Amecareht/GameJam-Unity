@@ -16,11 +16,13 @@ public class PlayerMove : MonoBehaviour
     private float raycastDistance = 4f;
     public Vector2 rightOffset, leftOffset, topOffset;
     public float collisionRadius = 0.25f;
-    [SerializeField] private bool onWall;
+    [SerializeField] private bool onWall, Onwalls;
     [SerializeField] private bool RightWall,LeftWall,TopWall;
     [SerializeField] private int wallLeftOrRight;
     private bool wallJumping;
     public float BumpPower;
+    public float slideSpeed;
+    public bool isMoving;
     
     
 
@@ -46,7 +48,7 @@ public class PlayerMove : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         JumpLeft = MaxJumps;
         sprint = speed * 1.4f;
-
+        slideSpeed = 9f;
 
     }
 
@@ -76,6 +78,8 @@ public class PlayerMove : MonoBehaviour
 
         onWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, Glued) ||
                  Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, Glued);
+        onWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, groundLayer) ||
+                 Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, groundLayer);
         RightWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, Glued);
         LeftWall = Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, Glued);
         TopWall = Physics2D.OverlapCircle((Vector2)transform.position + topOffset, collisionRadius, Glued);
@@ -111,11 +115,18 @@ public class PlayerMove : MonoBehaviour
             rb.velocity = Vector2.up * BumpPower;
         }
         Debug.Log(isBumbed());
+        if ((onWall || Onwalls ) && !isGrounded())
+        {
+            WallSlide();
+        }
 
 
+    }
 
-
-
+    void WallSlide()
+    {
+        rb.velocity = new Vector2(rb.velocity.x, -slideSpeed);
+        Debug.Log("here");
     }
 
     void JumpFalse()
